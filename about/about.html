@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <!-- <script>
+    const faders = document.querySelectorAll(".fade-in");
+
+    const appearOptions = {
+      threshold: 0.2,
+      rootMargin: "0px 0px -50px 0px",
+    };
+
+    const appearOnScroll = new IntersectionObserver(function (
+      entries,
+      observer
+    ) {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("appear");
+        observer.unobserve(entry.target);
+      });
+    },
+    appearOptions);
+
+    faders.forEach((fader) => {
+      appearOnScroll.observe(fader);
+    });
+  </script> -->
+
+  <body>
+    <nav class="navbar">
+      <div class="name">
+        <h1>SHIVAY RANA</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about/about.html">About</a></li>
+        <li><a href="../projects/projects.html">Projects</a></li>
+        <li><a href="../services/services.html">Services</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="about-section">
+      <div class="box fade-in">
+        <h2 class="animated-heading">Summary</h2>
+        <p>
+          I'm a full stack software developer with a strong foundation in
+          front-end development and a growing proficiency in backend
+          technologies. I enjoy solving real-world problems and building clean,
+          efficient applications.
+        </p>
+      </div>
+
+      <div class="box fade-in">
+        <h2 class="animated-heading">Education</h2>
+        <p>
+          <strong>Bachelor of Technology in Computer Science</strong><br />
+          Chandigarh University, Mohali, Punjab<br />
+          <em>Expected Graduation: July 2027</em>
+        </p>
+      </div>
+
+      <div class="box fade-in">
+        <h2 class="animated-heading">Technical Skills</h2>
+        <ul>
+          <li><strong>Programming Languages:</strong> C, C++, Python</li>
+          <li>
+            <strong>Web Technologies:</strong> HTML, CSS, JavaScript, Node.js,
+            Express.js
+          </li>
+          <li><strong>Tools & Platforms:</strong> Git, GitHub</li>
+          <li>
+            <strong>Relevant Coursework:</strong> Data Structures and
+            Algorithms, Databases
+          </li>
+          <li>
+            <strong>Other Skills:</strong> Problem Solving, Collaborative
+            Working
+          </li>
+        </ul>
+      </div>
+
+      <div class="box fade-in">
+        <h2 class="animated-heading">Hobbies</h2>
+        <ul>
+          <li>Playing Basketball</li>
+          <li>Running</li>
+          <li>Reading Newspaper</li>
+          <li>Geopolitics</li>
+          <li>Listening to Music</li>
+      </div>
+
+    </div>
+  </body>
+</html>

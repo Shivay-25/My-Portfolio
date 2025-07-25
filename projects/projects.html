@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="projects.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="name">
+        <h1>SHIVAY RANA</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about/about.html">About</a></li>
+        <li><a href="../projects/projects.html">Projects</a></li>
+        <li><a href="../services/services.html">Services</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="projects-section">
+      <h2 class="section-heading">Projects</h2>
+
+      <div class="projects-grid">
+        <div class="project-card fade-in-bottom">
+          <h3>Healthcare Management System</h3>
+          <p class="tech-stack">Tech Stack: MERN Stack</p>
+          <p class="project-overview">
+            Developed a comprehensive HMS for patient care, appointment
+            scheduling, EHR, billing, and doctor-patient communication.
+          </p>
+        </div>
+
+        <div class="project-card fade-in-bottom">
+          <h3>Spotify Clone</h3>
+          <p class="tech-stack">Tech Stack: HTML, CSS, JavaScript</p>
+          <p class="project-overview">
+            Built a Spotify clone with responsive UI and interactive features
+            like play/pause, playlist rendering, and progress tracking.
+          </p>
+        </div>
+
+        <div class="project-card fade-in-bottom">
+          <h3>Tic Tac Toe</h3>
+          <p class="tech-stack">Tech Stack: Data Structure Using C++</p>
+          <p class="project-overview">
+            🎮 Tic Tac Toe Game in C++ This is a simple and interactive Tic Tac
+            Toe game written in C++, playable in the terminal. It supports both
+            User vs User and User vs Computer modes, and includes a live
+            scoreboard to track wins and draws across multiple rounds.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const fadeInCards = document.querySelectorAll(".project-card");
+
+      const observer = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = 1;
+              entry.target.style.transform = "translateX(0)";
+              obs.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      fadeInCards.forEach((card) => observer.observe(card));
+    </script>
+  </body>
+</html>

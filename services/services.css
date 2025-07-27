@@ -1,0 +1,8 @@
+.services ul li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(2,2,2);
+    color: rgb(235,235,235);
+    height: 100vh
+}

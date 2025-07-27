@@ -45,7 +45,12 @@
   /* justify-content: center; */
   height: 100vh;
 }
-
+/* .background-image {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+} */
 .container {
   max-width: 700px;
   color: rgb(229, 231, 234);
@@ -105,7 +110,6 @@
     border-color: rgb(229, 231, 234);
   }
 }
-
 
 @media (max-width: 768px) {
   .home {
